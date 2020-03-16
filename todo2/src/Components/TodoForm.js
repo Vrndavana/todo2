@@ -22,30 +22,28 @@ const TodoForm = () => {
         e.preventDefault();
         dispatch({type: "CLEAR", payload: newTodo});
     }
-    
+
         return (
             <div>
                 <form>
+
                     <input
                     type="text"
                     placeholder="Add Todo"
                     name="newTodo"
                     id='newTodo'
                     value={newTodo}
-                    onChange={handleChanges}></input>
-                    <button
-                    type="submit"
-                    onClick={handleSubmit}>Add</button>
-                    <button
-                    type="submit"
-                    onClick={handleClear}>Clear Completed</button>
+                    onChange={handleChanges}/>
+
+                    <button type="submit" onClick={handleSubmit}>      Add       </button>
+                    
                 </form>
-             <Todos 
-             state={state}
-             dispatch={dispatch}
-             id={state.id} 
-             newTodo={newTodo}/>
+
+             <Todos  state={state} dispatch={dispatch} id={state.id}  newTodo={newTodo}/>
+            <button type="submit" onClick={handleClear}> Clear Completed </button>
             </div>
+
         )
 }
+
 export default TodoForm
