@@ -40,3 +40,35 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+.Todoz {
+  width: 20%;
+  margin: 3% auto;
+  padding: 3%;
+  border: 3px solid rgb(236, 224, 224);
+
+
+}
+
+.todo{
+  width:75%;
+  margin: 0 auto;
+  border: 3px solid rgb(76, 187, 24);
+  background-color: rgb(94, 90, 90);
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  /* text-decoration: line-through; */
+}
+
+.todocompleted{
+  width:75%;
+  margin: 0 auto;
+  border: 3px solid rgb(184, 0, 0);
+  background-color: rgb(202, 202, 202);
+  border-radius: 3px;
+  color: rgb(0, 0, 0);
+  text-decoration: line-through;
+}
