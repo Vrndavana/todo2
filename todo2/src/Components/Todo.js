@@ -9,12 +9,8 @@ const Todos = (props) => {
 
     const handleToggle = id => {
         props.dispatch({ type: "TOGGLE_COMPLETED", id: id })
-
-
-
-
     }
-    
+
     return (
         <div className="Todoz">
             {props.state.map(todo => {
@@ -22,7 +18,9 @@ const Todos = (props) => {
                     <div  onClick={() => handleToggle(todo.id)} key={todo.id}
                     className={`todo${todo.completed ? 'completed' : ''}`}>
                         <p>{todo.item}</p>
+                        <div className="update"> [] </div>
                     </div>
+
                 )
             })}
         </div>
